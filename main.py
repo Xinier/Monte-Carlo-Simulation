@@ -1,35 +1,3 @@
-"""For this simulation, we will try to predict how much money we should budget for sales commissions for the next year.
-Sales commissions can be a large selling expense and it is important to plan appropriately for this expense.
-Therefore, build a Monte Carlo simulation using prior years’ commissions payments to predict the range of potential
-values for a sales compensation budget.
-
-Number of sales agent = 500
-Number of simulation = 1,000
-
-Key Info: Sales Target, Actual Sales, Percent to Target, Commission Rate, Commission Amount
-* Actual Sales = Sales Target * Percent to Target
-* Commission Amount = Actual Sales * Commission Rate
-
-* Percent to Target based on historical data:
-Normally distributed with a mean of 1 and standard deviation of 0.1
-
-* Sales Target based on historical data:
-Sales Target  -  Probability
-75,000        -  0.30
-100,000       -  0.30
-200,000       -  0.20
-300,000       -  0.10
-400,000       -  0.05
-500,000       -  0.05
-
-* Commission rate based on the table:
- 0-90%  = 2%
- 91-99% = 3%
- >=100% = 4%
-
-Reference: https://pbpython.com/monte-carlo.html
-"""
-
 import pandas as pd
 import numpy as np
 import seaborn as sns
